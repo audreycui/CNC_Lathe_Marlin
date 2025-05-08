@@ -1,0 +1,31 @@
+#include "../MarlinCore.h"
+
+class Conversational {
+
+    public: 
+        static uint8_t taper_angle; 
+        static uint8_t radius_radius; 
+        static float feed_speed; 
+        static float part_diameter; 
+        static int8_t x_offset; 
+        static int8_t y_offset; 
+    Conversational(); 
+    void init(); 
+
+    static void on_taper_update(){
+
+    }
+    static void on_radius_update(){
+
+    }
+
+    static void make_taper(){
+
+    }
+
+    static void make_radius(){
+        
+    }
+
+    
+}; 

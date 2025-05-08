@@ -1091,6 +1091,28 @@ namespace LanguageNarrow_en {
   LSTR MSG_PROGRESS_HOMING                = _UxGT("Homing");
   LSTR MSG_PROGRESS_MOVING_SELECTOR       = _UxGT("Moving selector");
   LSTR MSG_PROGRESS_FEED_FSENSOR          = _UxGT("Feeding to FSensor");
+
+  LSTR MSG_CONVERSATIONAL           = u8"Conversational Lathe";
+  LSTR MSG_TAPER                    = u8"Taper"; 
+  LSTR MSG_RADIUS                   = u8"Radius";
+  LSTR MSG_TAPER_ANGLE              = u8"Set Taper Angle";
+  LSTR MSG_RADIUS_RADIUS            = u8"Set Radius";
+  LSTR MSG_PART_DIAMETER            = u8"Part Diameter (in)";
+  LSTR MSG_CONVERSATIONAL_FEED      = u8"Feed Speed (in/min)";
+  LSTR MSG_MAKE_TAPER               = u8"Make Taper"; 
+  LSTR MSG_MAKE_RADIUS              = u8"Make Radius"; 
+
+  LSTR MSG_SET_OFFSETS              = u8"Set Offsets"; 
+  LSTR MSG_X_OFFSET                 = u8"X Offset";
+  LSTR MSG_Y_OFFSET                 = u8"Y Offset";
+  LSTR MSG_Z_OFFSET                 = u8"Z Offset";
+  LSTR MSG_SET_X_OFFSET             = u8"Set X Offset"; 
+  LSTR MSG_SET_Y_OFFSET             = u8"Set Y Offset"; 
+  LSTR MSG_SET_Z_OFFSET             = u8"Set Z Offset"; 
+
+  LSTR MSG_ZERO_X                   = u8"Zero X";
+  LSTR MSG_ZERO_Y                   = u8"Zero Y";
+  LSTR MSG_ZERO_Z                   = u8"Zero Z";
 }
 
 namespace LanguageWide_en {

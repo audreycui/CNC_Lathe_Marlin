@@ -154,6 +154,14 @@ namespace Language_en {
   LSTR MSG_MOVE_Z_TO_TOP            = u8"Raise Z to Top";
   LSTR MSG_MAX_SPEED_NO_UNITS       = u8"Max Speed";
 
+  LSTR MSG_CONVERSATIONAL           = u8"Conversational Lathe";
+  LSTR MSG_TAPER                    = u8"Make Taper"; 
+  LSTR MSG_RADIUS                   = u8"Make Radius";
+  LSTR MSG_TAPER_ANGLE              = u8"Taper Angle";
+  LSTR MSG_RADIUS_RADIUS            = u8"Radius";
+  LSTR MSG_PART_DIAMETER            = u8"Part Diameter (in)";
+  LSTR MSG_CONVERSATIONAL_FEED      = u8"Feed Speed (in/min)";
+
   //LSTR MSG_FTDI_HEATER_TIMEOUT    = u8"Idle timeout, temperature decreased. Press Okay to reheat and again to resume.";
 
   #if ENABLED(TOUCH_UI_LULZBOT_BIO)

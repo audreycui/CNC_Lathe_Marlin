@@ -553,6 +553,11 @@ void menu_motion() {
   #if ENABLED(CALIBRATION_GCODE)
     GCODES_ITEM(MSG_AUTO_CALIBRATE, F("G425"));
   #endif
+  
+  // zero x and y 
+  GCODES_ITEM(MSG_ZERO_X, F("G92 X0"));
+  GCODES_ITEM(MSG_ZERO_Y, F("G92 Y0"));
+
 
   //
   // Disable Steppers

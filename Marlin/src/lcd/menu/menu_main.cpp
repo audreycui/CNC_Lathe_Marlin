@@ -71,6 +71,7 @@ void menu_cancelobject();
 void menu_motion();
 void menu_temperature();
 void menu_configuration();
+void menu_conversational(); 
 
 #if ANY(HAS_LEVELING, HAS_BED_PROBE, ASSISTED_TRAMMING_WIZARD, LCD_BED_TRAMMING)
   void menu_probe_level();
@@ -368,6 +369,8 @@ void menu_main() {
   #endif
 
   SUBMENU(MSG_CONFIGURATION, menu_configuration);
+
+  SUBMENU(MSG_CONVERSATIONAL, menu_conversational); 
 
   #if ENABLED(CUSTOM_MENU_MAIN)
     if (TERN1(CUSTOM_MENU_MAIN_ONLY_IDLE, !busy)) {
