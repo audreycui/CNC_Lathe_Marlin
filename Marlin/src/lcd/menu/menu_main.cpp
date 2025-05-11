@@ -350,9 +350,9 @@ void menu_main() {
     #endif
   #endif
 
-  #if HAS_TEMPERATURE
-    SUBMENU(MSG_TEMPERATURE, menu_temperature);
-  #endif
+  // #if HAS_TEMPERATURE
+  //   SUBMENU(MSG_TEMPERATURE, menu_temperature);
+  // #endif
 
   #if HAS_POWER_MONITOR
     SUBMENU(MSG_POWER_MONITOR, menu_power_monitor);

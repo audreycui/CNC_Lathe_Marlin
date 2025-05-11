@@ -184,6 +184,9 @@ namespace LanguageNarrow_en {
   LSTR MSG_EXTRUDE                        = _UxGT("Extrude");
   LSTR MSG_RETRACT                        = _UxGT("Retract");
   LSTR MSG_MOVE_AXIS                      = _UxGT("Move Axis");
+  LSTR MSG_MOVE_AXIS_MANUAL               = _UxGT("Move Axis Manually");
+  LSTR MSG_MOVE_AXIS_AUTO                 = _UxGT("Move Axis Auto");
+  LSTR MSG_MOVE_AXIS_AUTO_GO              = _UxGT("Let Her Rip!");
   LSTR MSG_PROBE_AND_LEVEL                = _UxGT("Probe and Level");
   LSTR MSG_BED_LEVELING                   = _UxGT("Bed Leveling");
   LSTR MSG_LEVEL_BED                      = _UxGT("Level Bed");

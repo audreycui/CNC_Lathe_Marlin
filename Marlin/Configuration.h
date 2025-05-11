@@ -507,7 +507,7 @@
  *
  * ================================================================
  *  Analog Thermistors - 1kΩ pullup
- *   Atypical, and requires changing out the 4.7kΩ pullup for 1kΩ.
+ *   Atypical, and requires changing out the 4.7kΩ pullu for 1kΩ.
  *   (but gives greater accuracy and more stable PID)
  * ================================================================
  *    51 : 100kΩ EPCOS (1kΩ pullup)
@@ -567,7 +567,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 0
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -575,7 +575,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 1
+#define TEMP_SENSOR_BED 0
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 #define TEMP_SENSOR_COOLER 0
@@ -584,8 +584,8 @@
 #define TEMP_SENSOR_REDUNDANT 0
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
-#define DUMMY_THERMISTOR_998_VALUE  25
-#define DUMMY_THERMISTOR_999_VALUE 100
+#define DUMMY_THERMISTOR_998_VALUE  0
+#define DUMMY_THERMISTOR_999_VALUE 0
 
 // Resistor values when using MAX31865 sensors (-5) on TEMP_SENSOR_0 / 1 / 2 / BED
 #if TEMP_SENSOR_IS_MAX_TC(0)
@@ -641,7 +641,7 @@
 
 // Below this temperature the heater will be switched off
 // because it probably indicates a broken thermistor wire.
-#define HEATER_0_MINTEMP   5
+#define HEATER_0_MINTEMP   0
 #define HEATER_1_MINTEMP   5
 #define HEATER_2_MINTEMP   5
 #define HEATER_3_MINTEMP   5
@@ -1227,10 +1227,10 @@
  * Endstop "Hit" State
  * Set to the state (HIGH or LOW) that applies to each endstop.
  */
-#define X_MIN_ENDSTOP_HIT_STATE HIGH
-#define X_MAX_ENDSTOP_HIT_STATE HIGH
-#define Y_MIN_ENDSTOP_HIT_STATE HIGH
-#define Y_MAX_ENDSTOP_HIT_STATE HIGH
+#define X_MIN_ENDSTOP_HIT_STATE LOW
+#define X_MAX_ENDSTOP_HIT_STATE LOW
+#define Y_MIN_ENDSTOP_HIT_STATE LOW
+#define Y_MAX_ENDSTOP_HIT_STATE LOW
 #define Z_MIN_ENDSTOP_HIT_STATE HIGH
 #define Z_MAX_ENDSTOP_HIT_STATE HIGH
 #define I_MIN_ENDSTOP_HIT_STATE HIGH
@@ -1293,12 +1293,12 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 128 , 128 }
 
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
  */
-#define EDITABLE_STEPS_PER_UNIT
+//#define EDITABLE_STEPS_PER_UNIT
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1824,8 +1824,8 @@
 // @section motion
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR true
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR false
 //#define INVERT_Z_DIR false
 //#define INVERT_I_DIR false
 //#define INVERT_J_DIR false
@@ -1868,7 +1868,7 @@
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
-#define X_HOME_DIR -1
+#define X_HOME_DIR 1
 #define Y_HOME_DIR -1
 //#define Z_HOME_DIR -1
 //#define I_HOME_DIR -1
@@ -1896,8 +1896,8 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 50
-#define Y_BED_SIZE 200
+#define X_BED_SIZE 480
+#define Y_BED_SIZE 600
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -2470,7 +2470,7 @@
 //
 // G20/G21 Inch mode support
 //
-//#define INCH_MODE_SUPPORT
+#define INCH_MODE_SUPPORT
 
 //
 // M149 Set temperature units support

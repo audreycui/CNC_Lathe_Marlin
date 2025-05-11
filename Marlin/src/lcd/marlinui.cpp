@@ -740,7 +740,14 @@ void MarlinUI::init() {
       }
 
     #endif // ULTIPANEL_FLOWPERCENT
-
+    
+    #if ENABLED(INCH_MODE_SUPPORT)
+      //queue.inject(F("M220 S80")); 
+      queue.inject(F("G20")); 
+      
+      //queue.inject(F("M92 X4000 Y2000")); 
+    #endif
+      
     draw_status_screen();
   }
 

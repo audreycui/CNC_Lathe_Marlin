@@ -185,7 +185,7 @@
 
 // At least one hotend...
 #if HOTENDS
-  #define HAS_HOTEND 1
+  #define HAS_HOTEND 0
   #ifndef HOTEND_OVERSHOOT
     #define HOTEND_OVERSHOOT 15
   #endif
